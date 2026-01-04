@@ -1,5 +1,5 @@
 [project]
-name = "qusrm"
+name = "qute_script_manager"
 version = "0.1.0"
 description = "qutebrowser userscript manager"
 readme = "README.md"
@@ -24,10 +24,10 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project.scripts]
-"qusrm" = "qusrm.__main__:main"
+"qute_script_manager" = "qute_script_manager.__main__:main"
 
 [project.urls]
-Homepage = "https://github.com/purarue/qusrm"
+Homepage = "https://github.com/purarue/qute_script_manager"
 
 [project.optional-dependencies]
 testing = ["flake8", "mypy", "pytest"]
@@ -49,5 +49,5 @@ warn_return_any = true
 warn_unreachable = true
 
 [tool.setuptools.packages.find]
-include = ["qusrm"]
+include = ["qute_script_manager"]
 exclude = []

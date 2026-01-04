@@ -1,4 +1,4 @@
-# qusrm
+# qute_script_manager
 
 qutebrowser userscript manager
 
@@ -9,22 +9,22 @@ Requires `python3.10+`
 To install with pip, run:
 
 ```
-pip install git+https://github.com/purarue/qusrm
+pip install git+https://github.com/purarue/qute_script_manager
 ```
 
 ## Usage
 
 ```
-qusrm --help
+qute_script_manager --help
 ```
 
 ### Tests
 
 ```bash
-git clone 'https://github.com/purarue/qusrm'
-cd ./qusrm
+git clone 'https://github.com/purarue/qute_script_manager'
+cd ./qute_script_manager
 pip install '.[testing]'
 pytest
-flake8 ./qusrm
-mypy ./qusrm
+flake8 ./qute_script_manager
+mypy ./qute_script_manager
 ```

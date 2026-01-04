@@ -39,7 +39,7 @@ def pager(file1: Path, file2: Path) -> None:
     dproc.wait()
 
 
-prog_name = "qusrm"
+prog_name = "qute_script_manager"
 config_base = Path(os.environ.get("XDG_CONFIG_HOME", Path.home() / ".config"))
 config_dir = config_base / prog_name
 config_dir.mkdir(parents=True, exist_ok=True)
@@ -266,4 +266,4 @@ def update(skipcopy: bool, noconfirm: bool) -> None:
 
 
 if __name__ == "__main__":
-    main(prog_name="qusrm")
+    main(prog_name="qute_script_manager")
