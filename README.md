@@ -10,7 +10,7 @@ You can edit the `~/.config/qute_script_manager/urls.toml` to `pin` a version (s
 
 ## Installation
 
-Requires `python3.10+`
+Requires `python3.12+`
 
 To install with pip, run:
 
