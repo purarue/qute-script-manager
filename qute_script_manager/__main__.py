@@ -241,7 +241,7 @@ def list(urls: bool) -> None:
     click.echo(str(pt))
 
 
-@main.command()
+@main.command(short_help="update scripts")
 @click.option(
     "--noconfirm",
     is_flag=True,
