@@ -120,6 +120,7 @@ class ScriptData(typing.NamedTuple):
     def update_cellar_script(self, noconfirm: bool, skipcopy: bool) -> ScriptData:
         # dont update
         if self.pinned:
+            click.echo(f"{self.nickname} is pinned, skipping update check")
             return self
         target_file = self.cellar_path
         target_file.parent.mkdir(exist_ok=True, parents=True)
