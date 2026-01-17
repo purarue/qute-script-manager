@@ -30,8 +30,7 @@ def pager(file1: Path, file2: Path) -> None:
         proc = subprocess.run(
             shlex.split("git config --global core.pager"),
             check=False,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
+            capture_output=True,
         )
     dproc = subprocess.Popen(
         [proc.stdout.decode().strip() or "diff", str(file1), str(file2)]
